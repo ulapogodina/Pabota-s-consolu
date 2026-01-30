@@ -1,0 +1,60 @@
+import { CalculationResult } from './types';
+
+export class Calculator {
+  /**
+   * Сложение двух чисел
+   */
+  add(a: number, b: number): CalculationResult {
+    return {
+      success: true,
+      value: a + b
+    };
+  }
+
+  /**
+   * Вычитание двух чисел
+   */
+  subtract(a: number, b: number): CalculationResult {
+    return {
+      success: true,
+      value: a - b
+    };
+  }
+
+  /**
+   * Умножение двух чисел
+   */
+  multiply(a: number, b: number): CalculationResult {
+    return {
+      success: true,
+      value: a * b
+    };
+  }
+
+  /**
+   * Деление двух чисел
+   */
+  divide(a: number, b: number): CalculationResult {
+    if (b === 0) {
+      return {
+        success: false,
+        error: 'Ошибка: деление на ноль!'
+      };
+    }
+    
+    return {
+      success: true,
+      value: a / b
+    };
+  }
+
+  /**
+   * Возведение в степень
+   */
+  power(base: number, exponent: number): CalculationResult {
+    return {
+      success: true,
+      value: Math.pow(base, exponent)
+    };
+  }
+}

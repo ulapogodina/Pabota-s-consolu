@@ -1,0 +1,23 @@
+{
+  "name": "practical-work-2",
+  "version": "1.0.0",
+  "description": "Практическая работа №2 «Работа с консолью» (Readline)",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["typescript", "console", "readline"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/readline-sync": "^1.4.4",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

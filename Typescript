@@ -1,0 +1,16 @@
+// Типы для операций калькулятора
+export type Operation = 'add' | 'subtract' | 'multiply' | 'divide' | 'power' | 'exit';
+
+// Интерфейс для меню
+export interface MenuItem {
+  id: number;
+  title: string;
+  operation: Operation;
+}
+
+// Интерфейс для результата вычисления
+export interface CalculationResult {
+  success: boolean;
+  value?: number;
+  error?: string;
+}
